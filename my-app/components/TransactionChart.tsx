@@ -16,7 +16,7 @@ import { transactionData } from '@/data/data'
 const TransactionChart = () => {
 	console.log(transactionData)
 	return (
-		<div className='w-full h-[22rem] bg-white m-2 p-2 rounded-sm border border-gray-200 flex flex-col flex-1'>
+		<div className='w-full h-[22rem] bg-white mx-2 p-2 rounded-sm border border-gray-200 flex flex-col flex-1'>
 			<strong className='text-gray-700 font-medium'>Transactions</strong>
 			<div className='w-full h-full mt-3 flex-1 text-xs'>
 				<ResponsiveContainer

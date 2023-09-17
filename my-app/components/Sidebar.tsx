@@ -60,13 +60,14 @@ const Sidebar = () => {
 							return (
 								<Link
 									key={item.name}
-									href={item.href}>
+									href={item.href}
+									className='no-underline'>
 									<li
 										className={`${
 											currentRoute === item.href
 												? 'bg-neutral-700 text-neutral-100'
 												: 'text-neutral-400'
-										}  flex items-center gap-2 font-light px-1 py-2 rounded-sm text-base hover:bg-neutral-700`}>
+										} no-underline  flex items-center gap-2 font-light px-1 py-2 rounded-sm text-base hover:bg-neutral-700`}>
 										{item.icon}
 										{item.name}
 									</li>
@@ -82,12 +83,12 @@ const Sidebar = () => {
 						return (
 							<li
 								key={item.name}
-								className='hover:bg-neutral-700 font-light px-1 py-2 rounded-sm text-base'>
+								className='hover:bg-neutral-700 no-underline font-light px-1 py-2 rounded-sm text-base'>
 								<Link
 									href={item.href}
 									className={`${
 										item.name === 'Logout' && 'text-red-500'
-									} flex flex-row items-center gap-2`}>
+									} flex flex-row items-center gap-2 `}>
 									{item.icon}
 									{item.name}
 								</Link>
